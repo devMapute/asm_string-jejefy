@@ -30,9 +30,8 @@ _start:
 
 string_copy:
     rep movsb               ; copy chars of string2 to string1 (repeat until rcx == 0)
-    ret
-    
-    
+                            ; string1 is now jejefied
+
 exit_here:                   
     mov rax, SYS_EXIT
     xor rdi, rdi
